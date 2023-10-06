@@ -1322,3 +1322,10 @@ body {
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
 }
+
+.loading-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

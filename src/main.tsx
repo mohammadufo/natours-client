@@ -10,6 +10,8 @@ import {
 } from 'react-router-dom'
 import Tour from './pages/Tour.tsx'
 import Tours from './pages/Tours.tsx'
+import { ThemeProvider } from '@mui/material'
+import { MuiTheme } from './utils/MuiTheme.tsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +32,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={MuiTheme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 )
