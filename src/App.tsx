@@ -1,7 +1,13 @@
-import './App.css'
+import MainLayout from './layout/MainLayout'
 
 function App() {
-  return <h1>i love alaa</h1>
+  return (
+    <>
+      <MainLayout>
+        <h1>i love alaa</h1>
+      </MainLayout>
+    </>
+  )
 }
 
 export default App
