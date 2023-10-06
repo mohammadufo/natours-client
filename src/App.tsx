@@ -1,10 +1,11 @@
+import { Outlet } from 'react-router-dom'
 import MainLayout from './layout/MainLayout'
 
 function App() {
   return (
     <>
       <MainLayout>
-        <h1>i love alaa</h1>
+        <Outlet />
       </MainLayout>
     </>
   )
